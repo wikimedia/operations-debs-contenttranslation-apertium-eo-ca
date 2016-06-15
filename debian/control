@@ -1,14 +1,14 @@
 Source: apertium-eo-ca
 Section: science
 Priority: optional
-Maintainer: Kartik Mistry <kartik@debian.org>
-Build-Depends: apertium,
+Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+Uploaders: Tino Didriksen <mail@tinodidriksen.com>,
+           Kartik Mistry <kartik@debian.org>
+Build-Depends: apertium-dev (>= 3.4),
                autotools-dev,
                debhelper (>= 9),
                dh-autoreconf,
                gawk,
-               libapertium3-3.3-dev,
-               liblttoolbox3-3.3-dev (>= 3.3),
                locales,
                pkg-config (>= 0.21)
 Standards-Version: 3.9.6
@@ -18,7 +18,7 @@ Vcs-Browser: https://anonscm.debian.org/cgit/debian-science/packages/apertium-eo
 
 Package: apertium-eo-ca
 Architecture: all
-Depends: apertium (>= 3.3), ${misc:Depends}, ${shlibs:Depends}
+Depends: apertium (>= 3.4), ${misc:Depends}, ${shlibs:Depends}
 Provides: apertium-ca-eo
 Conflicts: apertium-ca-eo
 Description: Apertium translation data for the Esperanto-Catalan pair
